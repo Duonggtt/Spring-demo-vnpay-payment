@@ -40,7 +40,7 @@ public class VNPayService {
 
         String orderType = "other";
         vnp_Params.put("vnp_TxnRef", getRandomNumber(8));
-        vnp_Params.put("vnp_OrderInfo", "Thanh toan don hang:" + vnp_Params.get("vnp_TxnRef"));
+        vnp_Params.put("vnp_OrderInfo", request.getOrderInfo());
         vnp_Params.put("vnp_OrderType", orderType);
         vnp_Params.put("vnp_Locale", "vn");
         vnp_Params.put("vnp_ReturnUrl", returnUrl);
